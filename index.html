@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Niaz Khan | Student • Developer • Future Manager</title>
+<meta name="description" content="Personal portfolio of an Information Technology & Management student at Daffodil International University interested in software development, cybersecurity, networking, management, leadership, and global academic opportunities.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Niaz Khan | Student • Developer • Future Manager">
+<meta property="og:description" content="Information Technology & Management student at Daffodil International University building skills in technology, management and leadership.">
+<meta name="theme-color" content="#07070f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2307070f'/%3E%3Cpath d='M9 22V10l7 8 7-8v12' stroke='%238b7bff' stroke-width='2.5' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <a class="brand" href="#home" data-bind="name">Niaz Khan</a>
+  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#global">Global</a><a href="#contact" class="pill">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="hello">Hi, I'm<br><span class="gname" data-bind="name">Niaz Khan</span></p>
+    <h1>Student <i>|</i> Developer <i>|</i> Future Manager</h1>
+    <p class="lead">Building my skills across technology, software, cybersecurity, networking, and management while preparing for a global professional career.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">View Projects</a>
+      <a class="btn" href="#contact">Contact Me</a>
+      <a class="btn ghost" id="resumeBtn" href="assets/resume/resume.pdf" download hidden>Download Resume</a>
+      <span class="note" id="resumeNote" hidden>Add resume at assets/resume/resume.pdf</span>
+    </div>
+  </div>
+  <div class="hero-vis">
+    <svg viewBox="0 0 420 420" role="img" aria-label="Network diagram connecting technology, security, management and global growth around a student at the center">
+      <g class="links" stroke="currentColor" fill="none">
+        <path d="M210 210 L80 90"/><path d="M210 210 L340 90"/><path d="M210 210 L80 330"/><path d="M210 210 L340 330"/>
+        <circle cx="210" cy="210" r="150" stroke-dasharray="3 7" class="orbit"/>
+      </g>
+      <g class="node"><circle cx="80" cy="90" r="9"/><text x="80" y="64" text-anchor="middle">Technology</text></g>
+      <g class="node"><circle cx="340" cy="90" r="9"/><text x="340" y="64" text-anchor="middle">Security</text></g>
+      <g class="node"><circle cx="80" cy="330" r="9"/><text x="80" y="364" text-anchor="middle">Management</text></g>
+      <g class="node"><circle cx="340" cy="330" r="9"/><text x="340" y="364" text-anchor="middle">Global</text></g>
+      <circle cx="210" cy="210" r="62" class="core"/>
+    </svg>
+    <div class="photo">
+      <img src="assets/images/profile.jpg" alt="Portrait of the portfolio owner" width="110" height="110" onerror="this.parentNode.classList.add('empty');this.remove()">
+      <span class="ph">Photo<br><small>assets/images/profile.jpg</small></span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <h2>About me</h2>
+  <div class="cols">
+    <div class="prose">
+      <p>I'm a B.Sc. Information Technology & Management student at <strong data-bind="university">Daffodil International University</strong> in Bangladesh. I'm building a foundation in software, programming, networking and cybersecurity, and practicing the habits that go with it: troubleshooting, clear communication, and working well in a team.</p>
+      <p>I don't see technology as a separate track from leadership. I'm interested in management, project work and entrepreneurship, and I want to combine them with technical skills rather than follow a purely technical path.</p>
+      <p>I care about continuous learning and international academic exposure, which is why I have applied for Erasmus+ semester exchange opportunities.</p>
+    </div>
+    <ul class="pillars">
+      <li><b>Technology</b> software, networks, security</li>
+      <li><b>Management</b> projects, teams, entrepreneurship</li>
+      <li><b>Leadership</b> communication and responsibility</li>
+      <li><b>Global growth</b> learning across cultures</li>
+    </ul>
+  </div>
+</section>
+
+<section id="education" class="sec">
+  <h2>Education</h2>
+  <article class="card edu">
+    <h3 data-bind="university">Daffodil International University</h3>
+    <p class="meta"><span data-bind="degree">B.Sc. in Information Technology &amp; Management</span></p>
+    <p class="meta"><span data-bind="startYear">2024</span> – Present · Currently in the <span data-bind="semester">7th semester</span> · Expected graduation <span data-bind="graduation">2028</span> · Bangladesh</p>
+    <p>Academic interests: Software Engineering, Networking, Cybersecurity, IT, Management.</p>
+    <details>
+      <summary>Relevant coursework and academic interests</summary>
+      <div class="topics">
+        <div><h4>Networks &amp; data communications</h4><p>Shannon capacity, transmission modes, decibels, data-link layer, MAC protocols (Pure ALOHA, CSMA, CSMA/CA, RTS/CTS), multiplexing (FDM), checksum, bit rate and baud rate, noise, attenuation, distortion, crosstalk, PCM, delta modulation, burst errors.</p></div>
+        <div><h4>Cybersecurity</h4><p>Security concepts, vulnerabilities, security case studies.</p></div>
+        <div><h4>Software testing</h4><p>Introduction to testing and core testing concepts.</p></div>
+        <div><h4>Business &amp; entrepreneurship</h4><p>Business Model Canvas, ERRC Grid, Decision Matrix, management concepts.</p></div>
+      </div>
+    </details>
+      </article>
+</section>
+
+<section id="skills" class="sec">
+  <h2>Skills</h2>
+  <p class="sub">Levels are honest labels, not percentages: Learning, Developing, Familiar, Working Knowledge.</p>
+  <div class="grid skills" id="skillGrid"></div>
+</section>
+
+<section id="projects" class="sec">
+  <h2>Projects</h2>
+  <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+  <div class="grid" id="projectGrid"></div>
+</section>
+
+<section id="experience" class="sec">
+  <h2>Experience &amp; activities</h2>
+  <ol class="timeline" id="expList"></ol>
+</section>
+
+<section id="global" class="sec global">
+  <h2>Global academic ambition</h2>
+  <p class="sub">I have applied for Erasmus+ semester exchange opportunities through DIU International Affairs. Results are pending, and none of these is a completed exchange. My goals: academic growth, global exposure, cross-cultural learning and professional development.</p>
+  <blockquote>Enhance my academic growth, gain global exposure, and develop professionally.</blockquote>
+  <div class="grid" id="erasmusGrid"></div>
+</section>
+
+<section id="contact" class="sec contact">
+  <h2>Contact</h2>
+  <p class="sub">Open to internships, university activities and conversations about technology and management.</p>
+  <dl class="clist">
+    <div><dt>Email</dt><dd id="cEmail"></dd></div>
+    <div><dt>GitHub</dt><dd id="cGit"></dd></div>
+    <div><dt>LinkedIn</dt><dd id="cLi"></dd></div>
+    <div><dt>Location</dt><dd data-bind="location">Bangladesh</dd></div>
+  </dl>
+  <a class="btn primary" id="mailBtn" href="#contact">Send an email</a>
+</section>
+</main>
+
+<footer>
+  <p class="fname" data-bind="name">Niaz Khan</p>
+  <p>Student | Developer | Future Manager</p>
+  <p class="soft">Building skills. Creating opportunities. Thinking globally.</p>
+  <p class="soft">© <span id="year"></span> <span data-bind="name">Niaz Khan</span>. All rights reserved.</p>
+</footer>
+<button id="toTop" aria-label="Back to top" hidden>↑</button>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
